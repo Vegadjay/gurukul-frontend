@@ -141,7 +141,7 @@ const StudentDashboard = () => {
 
     const handleGuruClick = (guruId) => {
         // Redirect to the tutor page with the guru ID
-        window.location.href = `https://gurukul-backend-21h3.onrender.comtutor/${guruId}`;
+        window.location.href = `https://guruqool.vercel.app/tutor/${guruId}`;
     };
 
     if (loading) {
@@ -443,8 +443,7 @@ const StudentDashboard = () => {
                                                 className="px-5 py-3 bg-transparent border-2 border-blue-600 text-blue-600 rounded-md hover:bg-blue-50 dark:hover:bg-blue-900 font-poppins text-lg"
                                                 onClick={(e) => {
                                                     e.stopPropagation();
-                                                    // Add messaging functionality here
-                                                    console.log(`Message guru: ${guru._id}`);
+                                                    navigate(`https://guruqool.vercel.app/message/${guru._id}`);
                                                 }}
                                             >
                                                 Message
@@ -479,9 +478,10 @@ const StudentDashboard = () => {
                             </div>
                         )}
                     </div>
-                )}
-            </main>
-        </div>
+                )
+                }
+            </main >
+        </div >
     );
 };
 

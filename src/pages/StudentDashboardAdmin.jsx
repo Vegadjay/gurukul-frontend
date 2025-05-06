@@ -145,7 +145,7 @@ const StudentDashboard = () => {
     };
 
     const handleGuruClick = (guruId) => {
-        window.location.href = `http://localhost:8081/tutor/${guruId}`;
+        window.location.href = `https://guruqool.vercel.app//tutor/${guruId}`;
     };
 
     if (loading) {

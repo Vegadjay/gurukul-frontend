@@ -63,7 +63,7 @@ const CourseGrid = () => {
             description: "Master musical instruments and performing arts with expert guidance from seasoned professionals.",
             color: "border-purple-300 dark:border-purple-700",
             imageUrl: "/catagory/Instruments.png",
-            url: "http://localhost:8081/courses/Professional%20skills"
+            url: "https://guruqool.vercel.app/courses/Professional%20skills"
         },
         {
             id: 2,
@@ -71,7 +71,7 @@ const CourseGrid = () => {
             description: "Explore diverse art forms and unleash your creative potential through hands-on projects and techniques.",
             color: "border-blue-300 dark:border-blue-700",
             imageUrl: "/catagory/Art-and-Creativity.png",
-            url: "http://localhost:8081/courses/arts%20and%20crafts"
+            url: "https://guruqool.vercel.app/courses/arts%20and%20crafts"
         },
         {
             id: 3,
@@ -79,7 +79,7 @@ const CourseGrid = () => {
             description: "Enhance your academic knowledge with comprehensive courses across various disciplines and subjects.",
             color: "border-green-300 dark:border-green-700",
             imageUrl: "/catagory/Academics.png",
-            url: "http://localhost:8081/courses/Academic"
+            url: "https://guruqool.vercel.app/courses/Academic"
         }
     ];
 
@@ -90,7 +90,7 @@ const CourseGrid = () => {
             description: "Learn new languages with immersive methods, cultural context, and conversational practice with expert instructors.",
             color: "border-yellow-300 dark:border-yellow-700",
             imageUrl: "/catagory/Languages.png",
-            url: "http://localhost:8081/courses/Langauges"
+            url: "https://guruqool.vercel.app/courses/Langauges"
         },
         {
             id: 5,
@@ -98,7 +98,7 @@ const CourseGrid = () => {
             description: "Discover traditional and modern handicraft techniques to create beautiful, handmade items with sustainable materials.",
             color: "border-indigo-300 dark:border-indigo-700",
             imageUrl: "/catagory/Handicraft.png",
-            url: "http://localhost:8081/courses/handi%20craft"
+            url: "https://guruqool.vercel.app/courses/handi%20craft"
         }
     ];
 
@@ -177,7 +177,6 @@ const CourseGrid = () => {
                 </div>
             </div>
 
-            {/* Bottom Categories Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                 {bottomCategories.map(category => (
                     <CategoryCard
