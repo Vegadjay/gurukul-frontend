@@ -50,7 +50,7 @@ const StudentDashboard = () => {
                 setLoading(true);
                 setError(null);
 
-                const studentResponse = await fetch(`http://localhost:5000/api/student/${studentId}`);
+                const studentResponse = await fetch(`https://gurukul-backend-21h3.onrender.com/api/student/${studentId}`);
                 if (!studentResponse.ok) {
                     throw new Error(`Failed to fetch student data: ${studentResponse.status}`);
                 }
@@ -67,7 +67,7 @@ const StudentDashboard = () => {
                 if (data.enrolledGurus && data.enrolledGurus.length > 0) {
                     try {
                         const gurusPromises = data.enrolledGurus.map(guruId =>
-                            fetch(`http://localhost:5000/api/guru/${guruId}`)
+                            fetch(`https://gurukul-backend-21h3.onrender.com/api/guru/${guruId}`)
                                 .then(res => {
                                     if (!res.ok) throw new Error(`Failed to fetch guru: ${res.status}`);
                                     return res.json();
@@ -237,7 +237,7 @@ const StudentDashboard = () => {
                                 <div className="p-7 text-center">
                                     <div className="relative mb-5 inline-block">
                                         <img
-                                            src={`http://localhost:5000/${studentData.profileImage}` || "https://placehold.co/400"}
+                                            src={`https://gurukul-backend-21h3.onrender.com/${studentData.profileImage}` || "https://placehold.co/400"}
                                             alt="Profile"
                                             className="h-36 w-36 rounded-full object-cover border-4 border-white dark:border-gray-700"
                                         />
@@ -490,7 +490,7 @@ const StudentDashboard = () => {
                                     >
                                         <div className="p-8 flex flex-col items-center">
                                             <img
-                                                src={guru.profileImage ? `http://localhost:5000/${guru.profileImage}` : "https://placehold.co/120?text=Guru"}
+                                                src={guru.profileImage ? `https://gurukul-backend-21h3.onrender.com/${guru.profileImage}` : "https://placehold.co/120?text=Guru"}
                                                 alt={guru.name}
                                                 className="h-28 w-28 rounded-full object-cover mb-6"
                                             />

@@ -58,7 +58,7 @@ const BookingModal = ({ tutor, onClose, userId, navigate }) => {
         status: "pending"
       });
 
-      const response = await fetch(`http://localhost:5000/api/session`, {
+      const response = await fetch(`https://gurukul-backend-21h3.onrender.com/api/session`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -115,7 +115,7 @@ const BookingModal = ({ tutor, onClose, userId, navigate }) => {
     console.log(tutor?.perHourRate)
     setIsLoading(true);
     try {
-      const response = await fetch("http://localhost:5000/api/payment/create-order", {
+      const response = await fetch("https://gurukul-backend-21h3.onrender.com/api/payment/create-order", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

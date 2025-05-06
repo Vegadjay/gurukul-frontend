@@ -38,7 +38,7 @@ const itemVariants = {
   }
 };
 
-const baseUrl = 'http://localhost:5000';
+const baseUrl = 'https://gurukul-backend-21h3.onrender.com';
 
 const TutorProfile = () => {
   const { id } = useParams();
@@ -242,7 +242,7 @@ const TutorProfile = () => {
     try {
       console.log(userId, "userId");
       console.log(tutor._id, "tutorId");
-      const response = await fetch(`http://localhost:5000/api/student/booklesson?guruId=${tutor._id}&studentId=${userId}`, {
+      const response = await fetch(`https://gurukul-backend-21h3.onrender.com/api/student/booklesson?guruId=${tutor._id}&studentId=${userId}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json'

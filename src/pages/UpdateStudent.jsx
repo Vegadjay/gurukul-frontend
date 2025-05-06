@@ -53,7 +53,7 @@ export default function UpdateGuru() {
         const fetchGuruData = async () => {
             try {
                 setIsLoading(true);
-                const response = await fetch(`http://localhost:5000/api/guru/${guruId}`);
+                const response = await fetch(`https://gurukul-backend-21h3.onrender.com/api/guru/${guruId}`);
 
                 if (!response.ok) {
                     throw new Error('Failed to fetch guru data');
@@ -191,7 +191,7 @@ export default function UpdateGuru() {
             };
 
 
-            const response = await fetch(`http://localhost:5000/api/guru/updateguru/${guruId}`, {
+            const response = await fetch(`https://gurukul-backend-21h3.onrender.com/api/guru/updateguru/${guruId}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',

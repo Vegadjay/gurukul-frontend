@@ -183,7 +183,7 @@ export default function RegisterGuru() {
         setLoading(true);
 
         try {
-            const response = await fetch('http://localhost:5000/api/guru', {
+            const response = await fetch('https://gurukul-backend-21h3.onrender.com/api/guru', {
                 method: 'POST',
                 body: submissionFormData,
             });

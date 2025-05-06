@@ -44,7 +44,7 @@ const FindGuru = () => {
     const fetchTutors = async () => {
       setIsLoading(true);
       try {
-        const response = await fetch('http://localhost:5000/api/guru');
+        const response = await fetch('https://gurukul-backend-21h3.onrender.com/api/guru');
 
         if (!response.ok) {
           throw new Error(`API request failed with status ${response.status}`);
@@ -59,7 +59,7 @@ const FindGuru = () => {
         const transformedData = result.data.map(guru => ({
           id: guru._id,
           name: guru.username,
-          image: guru.profileImage ? `http://localhost:5000/${guru.profileImage}` : "https://randomuser.me/api/portraits/men/1.jpg",
+          image: guru.profileImage ? `https://gurukul-backend-21h3.onrender.com/${guru.profileImage}` : "https://randomuser.me/api/portraits/men/1.jpg",
           location: guru.address?.city || "Unknown",
           subject: guru.category || "General",
           title: guru.skills?.length > 0 ? `${guru.skills[0]} Specialist` : "Instructor",

@@ -7,7 +7,7 @@ import EmojiPicker from "emoji-picker-react";
 import socketIO from 'socket.io-client';
 import { useLocation, useNavigate } from "react-router-dom";
 
-const socket = socketIO.connect('http://localhost:5000');
+const socket = socketIO.connect('https://gurukul-backend-21h3.onrender.com');
 
 // Enhanced animation variants
 const containerVariants = {
@@ -156,7 +156,7 @@ const MessagingPage = () => {
 
     const getPreviousMessages = async () => {
         try {
-            const response = await fetch(`http://localhost:5000/api/chat/getchat?guruId=${role === "guru" ? currentUser.id : activeConversation.id}&studentId=${role === "student" ? currentUser.id : activeConversation.id}`, {
+            const response = await fetch(`https://gurukul-backend-21h3.onrender.com/api/chat/getchat?guruId=${role === "guru" ? currentUser.id : activeConversation.id}&studentId=${role === "student" ? currentUser.id : activeConversation.id}`, {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",
@@ -229,7 +229,7 @@ const MessagingPage = () => {
 
     const saveChat = async (guruId, studentId, sender, message) => {
         try {
-            const response = await fetch("http://localhost:5000/api/chat/message", {
+            const response = await fetch("https://gurukul-backend-21h3.onrender.com/api/chat/message", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

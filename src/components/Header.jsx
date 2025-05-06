@@ -201,7 +201,7 @@ const Header = () => {
   const getProfileImageUrl = () => {
     // If there's a valid image URL, use it
     if (imgUrl && imgUrl.trim() !== "") {
-      return `http://localhost:5000/${imgUrl}`;
+      return `https://gurukul-backend-21h3.onrender.com/${imgUrl}`;
     }
     // Otherwise return a default profile image
     return "/images/default-profile.png"; // Make sure this default image exists in your public folder

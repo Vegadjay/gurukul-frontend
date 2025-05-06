@@ -64,7 +64,7 @@ const GuruDashboard = () => {
                 setError(null);
 
                 try {
-                    const guruResponse = await fetch(`http://localhost:5000/api/guru/${guruId}`);
+                    const guruResponse = await fetch(`https://gurukul-backend-21h3.onrender.com/api/guru/${guruId}`);
 
                     if (!guruResponse.ok) {
                         throw new Error(`Server responded with status ${guruResponse.status}`);
@@ -96,7 +96,7 @@ const GuruDashboard = () => {
                 }
 
                 try {
-                    const studentsResponse = await fetch(`http://localhost:5000/api/student/enrolled/${guruId}`);
+                    const studentsResponse = await fetch(`https://gurukul-backend-21h3.onrender.com/api/student/enrolled/${guruId}`);
 
                     if (!studentsResponse.ok) {
                         console.warn(`Students API returned status: ${studentsResponse.status}`);
@@ -140,7 +140,7 @@ const GuruDashboard = () => {
 
     const fetchContent = async () => {
         try {
-            const response = await fetch(`http://localhost:5000/api/content/guru/${guruId}`);
+            const response = await fetch(`https://gurukul-backend-21h3.onrender.com/api/content/guru/${guruId}`);
             if (!response.ok) {
                 throw new Error(`Server responded with status ${response.status}`);
             }
@@ -175,7 +175,7 @@ const GuruDashboard = () => {
 
     const confirmDelete = async () => {
         try {
-            await fetch(`http://localhost:5000/api/content/${deleteConfirm.contentId}`, {
+            await fetch(`https://gurukul-backend-21h3.onrender.com/api/content/${deleteConfirm.contentId}`, {
                 method: "DELETE",
                 headers: {
                     "Content-Type": "application/json"
@@ -306,7 +306,7 @@ const GuruDashboard = () => {
                                 <div className="p-4 sm:p-6 md:p-8 lg:p-10 text-center min-h-[20rem] sm:min-h-[24rem] md:min-h-[28.2rem]">
                                     <div className="relative inline-block mt-5">
                                         <img
-                                            src={`http://localhost:5000/${guruData.profileImage}` || "https://img.freepik.com/free-photo/portrait-business-man-wearing-formal-suit_23-2148939117.jpg?semt=ais_hybrid&w=740"}
+                                            src={`https://gurukul-backend-21h3.onrender.com/${guruData.profileImage}` || "https://img.freepik.com/free-photo/portrait-business-man-wearing-formal-suit_23-2148939117.jpg?semt=ais_hybrid&w=740"}
                                             alt="Profile"
                                             className="h-56 w-56 rounded-full object-cover border-4 border-white dark:border-gray-700 shadow-md"
                                         />
@@ -523,7 +523,7 @@ const GuruDashboard = () => {
                                                 <td className="px-8 py-5 whitespace-nowrap">
                                                     <div className="flex items-center">
                                                         <div className="flex-shrink-0 h-14 w-14">
-                                                            <img className="h-14 w-14 rounded-full object-cover shadow-md" src={`http://localhost:5000/${student.profileImage}` || "https://placehold.co/50"} alt="Student" />
+                                                            <img className="h-14 w-14 rounded-full object-cover shadow-md" src={`https://gurukul-backend-21h3.onrender.com/${student.profileImage}` || "https://placehold.co/50"} alt="Student" />
                                                         </div>
                                                         <div className="ml-5">
                                                             <div className="text-base font-medium text-gray-900 dark:text-white font-poppins">{student.name}</div>
@@ -616,7 +616,7 @@ const GuruDashboard = () => {
                                             </div>
 
                                             <a
-                                                href={`http://localhost:5000/${content.file}`}
+                                                href={`https://gurukul-backend-21h3.onrender.com/${content.file}`}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 className="flex items-center justify-center bg-blue-50 hover:bg-blue-100 text-blue-600 dark:bg-blue-900/20 dark:hover:bg-blue-900/30 dark:text-blue-400 py-2 px-4 rounded-md transition-colors w-full"

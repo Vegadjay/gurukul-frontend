@@ -69,7 +69,7 @@ export default function AdminDashboard() {
 
     const fetchAllStudents = async () => {
         try {
-            const response = await fetch("http://localhost:5000/api/student", {
+            const response = await fetch("https://gurukul-backend-21h3.onrender.com/api/student", {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",
@@ -88,7 +88,7 @@ export default function AdminDashboard() {
 
     const fetchAllTeachers = async () => {
         try {
-            const response = await fetch("http://localhost:5000/api/guru", {
+            const response = await fetch("https://gurukul-backend-21h3.onrender.com/api/guru", {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",
@@ -107,7 +107,7 @@ export default function AdminDashboard() {
 
     const fetchTransactions = async () => {
         try {
-            const response = await fetch("http://localhost:5000/api/transaction", {
+            const response = await fetch("https://gurukul-backend-21h3.onrender.com/api/transaction", {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",
@@ -130,7 +130,7 @@ export default function AdminDashboard() {
 
     const fetchSessions = async () => {
         try {
-            const response = await fetch("http://localhost:5000/api/session", {
+            const response = await fetch("https://gurukul-backend-21h3.onrender.com/api/session", {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",
@@ -198,7 +198,7 @@ export default function AdminDashboard() {
         console.log(transactionId, " this is me", techer, amount, " this is me")
         try {
             setProcessingPayment(true)
-            const response = await fetch(`http://localhost:5000/api/guru/transfer-payment`, {
+            const response = await fetch(`https://gurukul-backend-21h3.onrender.com/api/guru/transfer-payment`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -228,7 +228,7 @@ export default function AdminDashboard() {
         console.log(sessionId);
         try {
             setCompletingSession(true)
-            const response = await fetch(`http://localhost:5000/api/session/${sessionId}/complete`, {
+            const response = await fetch(`https://gurukul-backend-21h3.onrender.com/api/session/${sessionId}/complete`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",
@@ -437,7 +437,7 @@ export default function AdminDashboard() {
             const teacherPhone = payment.guruId?.phone || "";
 
             // Create order in backend
-            const response = await fetch("http://localhost:5000/api/payment/create-order", {
+            const response = await fetch("https://gurukul-backend-21h3.onrender.com/api/payment/create-order", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -619,7 +619,7 @@ export default function AdminDashboard() {
                                                                             <div className="h-10 w-10 rounded-full bg-gray-200 dark:bg-gray-700 overflow-hidden mr-3">
                                                                                 {student.profileImage ? (
                                                                                     <img
-                                                                                        src={`http://localhost:5000/${student.profileImage}`}
+                                                                                        src={`https://gurukul-backend-21h3.onrender.com/${student.profileImage}`}
                                                                                         alt={student.username}
                                                                                         className="h-full w-full object-cover"
                                                                                     />
@@ -716,7 +716,7 @@ export default function AdminDashboard() {
                                                                             <div className="h-10 w-10 rounded-full bg-gray-200 dark:bg-gray-700 overflow-hidden mr-3">
                                                                                 {teacher.profileImage ? (
                                                                                     <img
-                                                                                        src={`http://localhost:5000/${teacher.profileImage}`}
+                                                                                        src={`https://gurukul-backend-21h3.onrender.com/${teacher.profileImage}`}
                                                                                         alt={teacher.username}
                                                                                         className="h-full w-full object-cover"
                                                                                     />

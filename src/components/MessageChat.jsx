@@ -16,7 +16,7 @@ const MessageChat = ({ tutor, isOpen, onClose, currentUserId }) => {
   useEffect(() => {
     if (!isOpen) return;
 
-    const newSocket = io("http://localhost:5000", {
+    const newSocket = io("https://gurukul-backend-21h3.onrender.com", {
       withCredentials: true,
       transports: ["websocket"],
     });
@@ -26,7 +26,7 @@ const MessageChat = ({ tutor, isOpen, onClose, currentUserId }) => {
     const fetchChat = async () => {
       try {
         const response = await axios.post(
-          "http://localhost:5000/api/chat",
+          "https://gurukul-backend-21h3.onrender.com/api/chat",
           {
             participants: [currentUserId, tutor._id],
           },
@@ -69,7 +69,7 @@ const MessageChat = ({ tutor, isOpen, onClose, currentUserId }) => {
   const fetchMessages = async (chatId) => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/message/${chatId}`,
+        `https://gurukul-backend-21h3.onrender.com/api/message/${chatId}`,
         { withCredentials: true }
       );
       setMessages(response.data);

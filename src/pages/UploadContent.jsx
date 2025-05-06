@@ -94,7 +94,7 @@ const UploadContent = () => {
             uploadData.append('contentFile', selectedFile);
 
             const response = await fetch(
-                'http://localhost:5000/api/content',
+                'https://gurukul-backend-21h3.onrender.com/api/content',
                 {
                     method: 'POST',
                     body: uploadData,
