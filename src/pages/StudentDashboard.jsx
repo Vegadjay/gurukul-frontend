@@ -141,7 +141,7 @@ const StudentDashboard = () => {
 
     const handleGuruClick = (guruId) => {
         // Redirect to the tutor page with the guru ID
-        window.location.href = `http://localhost:8080/tutor/${guruId}`;
+        window.location.href = `https://gurukul-backend-21h3.onrender.comtutor/${guruId}`;
     };
 
     if (loading) {
