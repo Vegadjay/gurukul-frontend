@@ -243,14 +243,7 @@ const HelpCenterPage = () => {
                             <ul className="list-disc pl-6 mb-4 space-y-2 text-gray-700 dark:text-gray-300">
                                 <li><a href="#" className="text-blue-600 dark:text-blue-400 hover:underline">Account security best practices</a></li>
                                 <li><a href="#" className="text-blue-600 dark:text-blue-400 hover:underline">Two-factor authentication</a></li>
-                                <li><a href="#" className="text-blue-600 dark:text-blue-400 hover:underline">Data protection measures</a></li>
-                                <li><a href="#" className="text-blue-600 dark:text-blue-400 hover:underline">Privacy settings</a></li>
                             </ul>
-                            <div className="bg-indigo-50 dark:bg-indigo-900/30 p-4 rounded-lg mb-4">
-                                <p className="text-gray-700 dark:text-gray-300">
-                                    For detailed information about how we handle your data, please refer to our <a href="/privacy-policy" className="text-blue-600 dark:text-blue-400 hover:underline">Privacy Policy</a> and <a href="/terms-of-service" className="text-blue-600 dark:text-blue-400 hover:underline">Terms of Service</a>.
-                                </p>
-                            </div>
                         </div>
                     </section>
 

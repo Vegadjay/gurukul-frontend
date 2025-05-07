@@ -364,7 +364,6 @@ const TutorProfile = () => {
               </div>
             </div>
 
-            {/* Right column - Actions */}
             <div className="w-full md:w-1/4">
               <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 mb-6">
                 <div className="h-6 bg-gray-200 dark:bg-gray-700 rounded w-full mb-4"></div>
@@ -443,14 +442,6 @@ const TutorProfile = () => {
                         </div>
                       )}
                     </motion.div>
-                    {tutor.status === "online" && (
-                      <motion.div
-                        initial={{ scale: 0, opacity: 0 }}
-                        animate={{ scale: 1, opacity: 1 }}
-                        transition={{ delay: 0.3 }}
-                        className="absolute bottom-2 right-2 h-4 w-4 bg-green-500 rounded-full border-2 border-white dark:border-gray-800"
-                      ></motion.div>
-                    )}
                   </div>
                 </div>
                 <div className="flex-1">

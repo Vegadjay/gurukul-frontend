@@ -76,7 +76,6 @@ const GuruDashboard = () => {
                     }
 
                     const { data } = await guruResponse.json();
-                    console.log("Guru data fetched successfully:", data);
 
                     setGuruData(prev => ({
                         ...prev,
