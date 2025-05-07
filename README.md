@@ -1,6 +1,6 @@
 # Guruqool
 
-![Guruqool Logo](./assets/logo.png)
+![Guruqool Logo](./public/banner/banner.png)
 
 ## Online One-on-One Learning Platform
 
