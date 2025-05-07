@@ -70,7 +70,7 @@ const TutorCard = ({ tutor }) => {
             </h3>
             <div className="mt-2 sm:mt-0">
               <span className="text-2xl font-bold text-guru-blue dark:text-blue-400">
-                £{tutor.hourlyRate}
+                ₹{tutor.hourlyRate}
               </span>
               <span className="text-sm text-gray-600 dark:text-gray-300">/hr</span>
               {tutor.firstClassFree && (

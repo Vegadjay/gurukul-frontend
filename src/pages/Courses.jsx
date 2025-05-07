@@ -415,7 +415,7 @@ const CategoryCoursePage = () => {
 
                                             <div className="md:ml-auto text-right">
                                                 <div className="text-2xl font-bold text-guru-blue dark:text-blue-400 mb-2">
-                                                    £{tutor.hourlyRate}/hr
+                                                    ₹{tutor.hourlyRate}/hr
                                                 </div>
                                                 <div className="flex items-center justify-end">
                                                     <div className="flex text-yellow-400">

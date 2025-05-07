@@ -416,9 +416,42 @@ export default function AdminDashboard() {
     )
 
     const deleteStudent = async (studentId) => {
-        toast.success("User deleted successfully");
-        console.log(studentId)
-    }
+        try {
+            const response = await fetch(`https://gurukul-backend-21h3.onrender.com/api/student/${studentId}`, {
+                method: 'DELETE',
+            });
+
+            if (!response.ok) {
+                throw new Error('Failed to delete student');
+            }
+
+            toast.success("User deleted successfully");
+            console.log("Deleted student ID:", studentId);
+        } catch (error) {
+            console.error("Error deleting student:", error);
+            toast.error("Failed to delete user");
+        }
+    };
+
+    const deleteTeacher = async (tutorId) => {
+        try {
+            const response = await fetch(`https://gurukul-backend-21h3.onrender.com/api/guru/${tutorId}`, {
+                method: 'DELETE',
+            });
+
+            if (!response.ok) {
+                throw new Error('Failed to delete teacher');
+            }
+
+            toast.success("Teacher deleted successfully");
+            console.log("Deleted teacher ID:", tutorId);
+        } catch (error) {
+            console.error("Error deleting teacher:", error);
+            toast.error("Failed to delete teacher");
+        }
+    };
+
+
 
     const openRazorpay = async (paymentId) => {
         setProcessingPayment(true);
@@ -750,6 +783,14 @@ export default function AdminDashboard() {
                                                                                 className="px-3 py-1 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700"
                                                                             >
                                                                                 View
+                                                                            </button>
+                                                                            <button
+                                                                                onClick={() => {
+                                                                                    deleteTeacher(teacher._id)
+                                                                                }}
+                                                                                className="px-3 py-1 text-sm font-medium text-white bg-red-600 rounded-lg hover:bg-red-700"
+                                                                            >
+                                                                                Delete
                                                                             </button>
                                                                         </div>
                                                                     </td>
