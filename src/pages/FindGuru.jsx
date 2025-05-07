@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Search, MapPin, Filter, X, Video, Calendar, MessageSquare, DollarSign, Star } from "lucide-react";
 import { motion } from "framer-motion";
-import TutorList from "../components/TutorList";
 import { Link } from "react-router-dom";
 import { toast } from "sonner";
 
@@ -169,13 +168,10 @@ const FindGuru = () => {
     setSearchTerm("");
   };
 
-  // Extract unique categories from API data
   const subjects = Array.from(new Set(tutors.map(tutor => tutor.subject).filter(Boolean)));
 
-  // Extract unique locations from API data
   const locations = Array.from(new Set(tutors.map(tutor => tutor.location).filter(Boolean)));
 
-  // Price ranges for filter
   const priceRanges = [
     { value: "0-25", label: "₹0 - ₹25" },
     { value: "25-50", label: "₹25 - ₹50" },
@@ -283,7 +279,6 @@ const FindGuru = () => {
                   </select>
                 </div>
 
-                {/* Lesson Type Filter */}
                 <div className="flex-1 min-w-[200px]">
                   <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
                     Lesson Type

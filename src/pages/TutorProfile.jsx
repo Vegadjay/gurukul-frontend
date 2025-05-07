@@ -736,7 +736,6 @@ const TutorProfile = () => {
               </div>
             </motion.div>
 
-            {/* Stats */}
             {stats && (
               <motion.div
                 className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6"
@@ -745,20 +744,12 @@ const TutorProfile = () => {
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Stats</h3>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                   <div className="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg text-center">
-                    <p className="text-3xl font-bold text-guru-blue dark:text-blue-400">{stats.totalLessons || 0}</p>
-                    <p className="text-sm text-gray-600 dark:text-gray-300">Total Lessons</p>
-                  </div>
-                  <div className="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg text-center">
                     <p className="text-3xl font-bold text-guru-blue dark:text-blue-400">{stats.totalStudents || 0}</p>
                     <p className="text-sm text-gray-600 dark:text-gray-300">Total Students</p>
                   </div>
                   <div className="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg text-center">
                     <p className="text-3xl font-bold text-guru-blue dark:text-blue-400">{stats.totalHours || 0}</p>
                     <p className="text-sm text-gray-600 dark:text-gray-300">Hours Taught</p>
-                  </div>
-                  <div className="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg text-center">
-                    <p className="text-3xl font-bold text-guru-blue dark:text-blue-400">{stats.completionRate || 0}%</p>
-                    <p className="text-sm text-gray-600 dark:text-gray-300">Completion Rate</p>
                   </div>
                 </div>
               </motion.div>

@@ -469,11 +469,13 @@ const StudentDashboard = () => {
                                     You haven't enrolled with any gurus yet.
                                 </p>
                                 <div className="mt-10">
-                                    <button
-                                        className="inline-flex items-center px-8 py-4 border border-transparent shadow-lg text-xl font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none font-poppins"
-                                    >
-                                        <Users className="h-7 w-7 mr-3" /> Find Gurus
-                                    </button>
+                                    <a href='/findguru'>
+                                        <button
+                                            className="inline-flex items-center px-8 py-4 border border-transparent shadow-lg text-xl font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none font-poppins"
+                                        >
+                                            <Users className="h-7 w-7 mr-3" /> Find Gurus
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
                         )}

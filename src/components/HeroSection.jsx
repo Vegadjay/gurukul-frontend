@@ -16,7 +16,7 @@ const HeroSection = () => {
             transition={{ duration: 0.6 }}
           >
             <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
-              Guruqool.com
+              Guruqool
             </span>
           </motion.h1>
 
@@ -26,7 +26,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Guruqool blends the best of physical and digital education to create an ecosystem where students thrive, teachers inspire, and learning never stops.
+            Guruqool to create an ecosystem where students thrive, teachers inspire, and learning never stops.
           </motion.p>
 
           <motion.div

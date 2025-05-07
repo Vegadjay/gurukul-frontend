@@ -28,16 +28,10 @@ const HelpCenterPage = () => {
                                 New to Guruqool? Here's how to get started with our platform and make the most of your learning experience.
                             </p>
                             <ul className="list-disc pl-6 mb-4 space-y-2 text-gray-700 dark:text-gray-300">
-                                <li><a href="#" className="text-blue-600 dark:text-blue-400 hover:underline">Creating your account</a></li>
-                                <li><a href="#" className="text-blue-600 dark:text-blue-400 hover:underline">Setting up your profile</a></li>
-                                <li><a href="#" className="text-blue-600 dark:text-blue-400 hover:underline">Finding courses and content</a></li>
-                                <li><a href="#" className="text-blue-600 dark:text-blue-400 hover:underline">Navigating the dashboard</a></li>
+                                <li><a href="https://guruqool.vercel.app/studentregister" className="text-blue-600 dark:text-blue-400 hover:underline">Creating your account</a></li>
+                                <li><a href="https://guruqool.vercel.app/findguru" className="text-blue-600 dark:text-blue-400 hover:underline">Finding courses and content</a></li>
+                                <li><a href="https://guruqool.vercel.app/   " className="text-blue-600 dark:text-blue-400 hover:underline">Navigating the dashboard</a></li>
                             </ul>
-                            <div className="bg-indigo-50 dark:bg-indigo-900/30 p-4 rounded-lg mb-4">
-                                <p className="text-gray-700 dark:text-gray-300">
-                                    We recommend completing your profile to get personalized course recommendations and connect with other learners.
-                                </p>
-                            </div>
                         </div>
                     </section>
 
@@ -57,11 +51,6 @@ const HelpCenterPage = () => {
                                 <li><a href="#" className="text-blue-600 dark:text-blue-400 hover:underline">Viewing billing history</a></li>
                                 <li><a href="#" className="text-blue-600 dark:text-blue-400 hover:underline">Cancelling subscription</a></li>
                             </ul>
-                            <div className="bg-yellow-50 dark:bg-yellow-900/20 p-4 rounded-lg mb-4">
-                                <p className="text-gray-700 dark:text-gray-300">
-                                    <span className="font-medium">Please note:</span> Subscription changes take effect at the end of your current billing cycle.
-                                </p>
-                            </div>
                         </div>
                     </section>
 
@@ -107,11 +96,6 @@ const HelpCenterPage = () => {
                                     </tbody>
                                 </table>
                             </div>
-                            <div className="bg-indigo-50 dark:bg-indigo-900/30 p-4 rounded-lg mb-4">
-                                <p className="text-gray-700 dark:text-gray-300">
-                                    For the best learning experience, we recommend completing lessons in sequence and participating in discussion forums.
-                                </p>
-                            </div>
                         </div>
                     </section>
 
@@ -130,41 +114,12 @@ const HelpCenterPage = () => {
                                 <li><a href="#" className="text-blue-600 dark:text-blue-400 hover:underline">Browser compatibility</a></li>
                                 <li><a href="#" className="text-blue-600 dark:text-blue-400 hover:underline">Mobile app troubleshooting</a></li>
                             </ul>
-                            <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg mb-4">
-                                <p className="text-gray-700 dark:text-gray-300">
-                                    For optimal performance, we recommend using the latest version of Chrome, Firefox, Safari, or Edge, and ensuring your device meets our minimum system requirements.
-                                </p>
-                            </div>
                         </div>
                     </section>
 
                     <section className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-sm">
                         <h2 className="text-2xl font-semibold mb-6 flex items-center text-indigo-600 dark:text-indigo-400">
                             <span className="bg-indigo-100 dark:bg-indigo-900 rounded-full w-10 h-10 flex items-center justify-center mr-3 text-lg font-bold shadow-md">5</span>
-                            Instructor Resources
-                        </h2>
-                        <div className="pl-12 border-l-3 border-indigo-100 dark:border-indigo-800 py-2">
-                            <p className="mb-4 text-gray-700 dark:text-gray-300">
-                                For our instructors, here are resources to help you create and manage your courses effectively.
-                            </p>
-                            <ul className="list-disc pl-6 mb-4 space-y-2 text-gray-700 dark:text-gray-300">
-                                <li><a href="#" className="text-blue-600 dark:text-blue-400 hover:underline">Course creation guidelines</a></li>
-                                <li><a href="#" className="text-blue-600 dark:text-blue-400 hover:underline">Uploading course materials</a></li>
-                                <li><a href="#" className="text-blue-600 dark:text-blue-400 hover:underline">Managing student interactions</a></li>
-                                <li><a href="#" className="text-blue-600 dark:text-blue-400 hover:underline">Instructor dashboard overview</a></li>
-                                <li><a href="#" className="text-blue-600 dark:text-blue-400 hover:underline">Earnings and payouts</a></li>
-                            </ul>
-                            <div className="bg-indigo-50 dark:bg-indigo-900/30 p-4 rounded-lg mb-4">
-                                <p className="text-gray-700 dark:text-gray-300">
-                                    We offer regular webinars for instructors to learn best practices and network with other educators. Check our events calendar for upcoming sessions.
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-sm">
-                        <h2 className="text-2xl font-semibold mb-6 flex items-center text-indigo-600 dark:text-indigo-400">
-                            <span className="bg-indigo-100 dark:bg-indigo-900 rounded-full w-10 h-10 flex items-center justify-center mr-3 text-lg font-bold shadow-md">6</span>
                             Community Guidelines
                         </h2>
                         <div className="pl-12 border-l-3 border-indigo-100 dark:border-indigo-800 py-2">
@@ -177,79 +132,12 @@ const HelpCenterPage = () => {
                                 <li><span className="font-medium">Protect privacy:</span> Do not share personal information about yourself or others.</li>
                                 <li><span className="font-medium">Report concerns:</span> Flag inappropriate content or behavior to our moderation team.</li>
                             </ul>
-                            <div className="bg-yellow-50 dark:bg-yellow-900/20 p-4 rounded-lg mb-4">
-                                <p className="text-gray-700 dark:text-gray-300">
-                                    <span className="font-medium">Please note:</span> Violations of our community guidelines may result in temporary or permanent restriction of account privileges.
-                                </p>
-                            </div>
                         </div>
                     </section>
 
                     <section className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-sm">
                         <h2 className="text-2xl font-semibold mb-6 flex items-center text-indigo-600 dark:text-indigo-400">
-                            <span className="bg-indigo-100 dark:bg-indigo-900 rounded-full w-10 h-10 flex items-center justify-center mr-3 text-lg font-bold shadow-md">7</span>
-                            Mobile App
-                        </h2>
-                        <div className="pl-12 border-l-3 border-indigo-100 dark:border-indigo-800 py-2">
-                            <p className="mb-4 text-gray-700 dark:text-gray-300">
-                                Learn on the go with our mobile application, available for iOS and Android devices.
-                            </p>
-                            <ul className="list-disc pl-6 mb-4 space-y-2 text-gray-700 dark:text-gray-300">
-                                <li><a href="#" className="text-blue-600 dark:text-blue-400 hover:underline">Downloading the app</a></li>
-                                <li><a href="#" className="text-blue-600 dark:text-blue-400 hover:underline">Mobile-specific features</a></li>
-                                <li><a href="#" className="text-blue-600 dark:text-blue-400 hover:underline">Offline learning</a></li>
-                                <li><a href="#" className="text-blue-600 dark:text-blue-400 hover:underline">Synchronizing progress across devices</a></li>
-                            </ul>
-                            <div className="bg-indigo-50 dark:bg-indigo-900/30 p-4 rounded-lg mb-4">
-                                <p className="text-gray-700 dark:text-gray-300">
-                                    Our mobile app allows you to download courses for offline viewing, perfect for learning during your commute or while traveling.
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-sm">
-                        <h2 className="text-2xl font-semibold mb-6 flex items-center text-indigo-600 dark:text-indigo-400">
-                            <span className="bg-indigo-100 dark:bg-indigo-900 rounded-full w-10 h-10 flex items-center justify-center mr-3 text-lg font-bold shadow-md">8</span>
-                            Accessibility
-                        </h2>
-                        <div className="pl-12 border-l-3 border-indigo-100 dark:border-indigo-800 py-2">
-                            <p className="mb-4 text-gray-700 dark:text-gray-300">
-                                We are committed to making education accessible to everyone. Learn about our accessibility features and how to customize your learning experience.
-                            </p>
-                            <ul className="list-disc pl-6 mb-4 space-y-2 text-gray-700 dark:text-gray-300">
-                                <li><a href="#" className="text-blue-600 dark:text-blue-400 hover:underline">Closed captioning and transcripts</a></li>
-                                <li><a href="#" className="text-blue-600 dark:text-blue-400 hover:underline">Screen reader compatibility</a></li>
-                                <li><a href="#" className="text-blue-600 dark:text-blue-400 hover:underline">Keyboard navigation</a></li>
-                                <li><a href="#" className="text-blue-600 dark:text-blue-400 hover:underline">Text size and contrast settings</a></li>
-                            </ul>
-                            <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg mb-4">
-                                <p className="text-gray-700 dark:text-gray-300">
-                                    If you have specific accessibility needs or suggestions for improvement, we welcome your feedback at <a href="mailto:accessibility@guruqool.com" className="text-blue-600 dark:text-blue-400 hover:underline">accessibility@guruqool.com</a>.
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-sm">
-                        <h2 className="text-2xl font-semibold mb-6 flex items-center text-indigo-600 dark:text-indigo-400">
-                            <span className="bg-indigo-100 dark:bg-indigo-900 rounded-full w-10 h-10 flex items-center justify-center mr-3 text-lg font-bold shadow-md">9</span>
-                            Security & Privacy
-                        </h2>
-                        <div className="pl-12 border-l-3 border-indigo-100 dark:border-indigo-800 py-2">
-                            <p className="mb-4 text-gray-700 dark:text-gray-300">
-                                We take your privacy and security seriously. Learn about our practices for protecting your data and maintaining a secure platform.
-                            </p>
-                            <ul className="list-disc pl-6 mb-4 space-y-2 text-gray-700 dark:text-gray-300">
-                                <li><a href="#" className="text-blue-600 dark:text-blue-400 hover:underline">Account security best practices</a></li>
-                                <li><a href="#" className="text-blue-600 dark:text-blue-400 hover:underline">Two-factor authentication</a></li>
-                            </ul>
-                        </div>
-                    </section>
-
-                    <section className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-sm">
-                        <h2 className="text-2xl font-semibold mb-6 flex items-center text-indigo-600 dark:text-indigo-400">
-                            <span className="bg-indigo-100 dark:bg-indigo-900 rounded-full w-10 h-10 flex items-center justify-center mr-3 text-lg font-bold shadow-md">10</span>
+                            <span className="bg-indigo-100 dark:bg-indigo-900 rounded-full w-10 h-10 flex items-center justify-center mr-3 text-lg font-bold shadow-md">6</span>
                             Contact Support
                         </h2>
                         <div className="pl-12 border-l-3 border-indigo-100 dark:border-indigo-800 py-2">
@@ -262,11 +150,6 @@ const HelpCenterPage = () => {
                                 <li><span className="font-medium">Phone:</span> +91 9265160652 (Monday to Friday, 9am-5pm IST)</li>
                                 <li><span className="font-medium">Support Ticket:</span> <a href="/support-ticket" className="text-blue-600 dark:text-blue-400 hover:underline">Submit a support ticket</a></li>
                             </ul>
-                            <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg mb-4">
-                                <p className="text-gray-700 dark:text-gray-300">
-                                    Our support team aims to respond to all inquiries within 24 hours. For urgent issues, please use the live chat feature for fastest assistance.
-                                </p>
-                            </div>
                         </div>
                     </section>
                 </div>
