@@ -145,7 +145,7 @@ const HelpCenterPage = () => {
                                 Still need help? Our support team is here for you. Here's how to reach us:
                             </p>
                             <ul className="list-disc pl-6 mb-4 space-y-2 text-gray-700 dark:text-gray-300">
-                                <li><span className="font-medium">Email:</span> <a href="mailto:support@guruqool.com" className="text-blue-600 dark:text-blue-400 hover:underline">support@guruqool.com</a></li>
+                                <li><span className="font-medium">Email:</span> <a href="mailto:guruqoolhelp@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline">guruqoolhelp@gmail.com</a></li>
                                 <li><span className="font-medium">Live Chat:</span> Available in the bottom right corner of any page</li>
                                 <li><span className="font-medium">Phone:</span> +91 9265160652 (Monday to Friday, 9am-5pm IST)</li>
                                 <li><span className="font-medium">Support Ticket:</span> <a href="/support-ticket" className="text-blue-600 dark:text-blue-400 hover:underline">Submit a support ticket</a></li>
