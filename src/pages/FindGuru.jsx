@@ -99,7 +99,6 @@ const FindGuru = () => {
       );
     }
 
-    // Apply subject filter
     if (filters.subject) {
       results = results.filter(tutor =>
         tutor.subject.toLowerCase().includes(filters.subject.toLowerCase())
@@ -318,7 +317,6 @@ const FindGuru = () => {
                 {/* Price Range Filter */}
                 <div className="flex-1 min-w-[200px]">
                   <label className="flex items-center text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-                    <DollarSign className="h-4 w-4 mr-1 text-green-500" />
                     Price Range (per hour)
                   </label>
                   <select
@@ -408,7 +406,6 @@ const FindGuru = () => {
               )}
               {filters.minRating && (
                 <div className="flex items-center bg-yellow-50 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-300 px-3 py-1 rounded-full text-sm">
-                  <Star className="h-3 w-3 mr-1" />
                   <span>{filters.minRating}+ stars</span>
                   <button
                     className="ml-2"
