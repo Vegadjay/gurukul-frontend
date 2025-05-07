@@ -393,7 +393,7 @@ const GuruDashboard = () => {
                                                 <h4 className="text-base font-medium text-gray-500 dark:text-gray-400 mb-3 font-poppins">Experience</h4>
                                                 <div className="flex items-center">
                                                     <Briefcase className="h-6 w-6 mr-3 text-blue-600" />
-                                                    <span className="text-gray-800 dark:text-white font-poppins text-lg">{guruData.experience} years</span>
+                                                    <span className="text-gray-800 dark:text-white font-poppins text-lg">{guruData.experience} years of experience</span>
                                                 </div>
                                             </div>
                                         </div>
