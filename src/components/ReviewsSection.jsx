@@ -123,77 +123,78 @@ export function InfiniteMovingCardsDemo() {
   const testimonials = [
     {
       quote: "A terrific piece of praise! My daughter has improved so much in her piano lessons since finding her tutor through Guruqool. The platform made it easy to find the perfect match.",
-      name: "Sarah Johnson",
+      name: "Priya Sharma",
       title: "Piano Student's Parent",
       avatar: "/api/placeholder/32/32"
     },
     {
       quote: "A fantastic bit of feedback! I've been teaching languages for years, but Guruqool has connected me with students who truly value my expertise. The scheduling system is seamless.",
-      name: "Michael Chen",
+      name: "Ravi Mehta",
       title: "Language Tutor",
       avatar: "/api/placeholder/32/32"
     },
     {
       quote: "After struggling with traditional tutoring options, Guruqool helped me find an art teacher who understands my style. My skills have improved dramatically.",
-      name: "Emma Rodriguez",
+      name: "Ananya Desai",
       title: "Art Student",
       avatar: "/api/placeholder/32/32"
     },
     {
       quote: "Guruqool transformed my tutoring business. I now have a full schedule of students who are genuinely interested in mathematics, and the payment system is reliable and transparent.",
-      name: "David Park",
+      name: "Arjun Kapoor",
       title: "Mathematics Tutor",
       avatar: "/api/placeholder/32/32"
     },
     {
       quote: "Finding a chemistry tutor who could explain complex concepts in a way I understand seemed impossible until I discovered Guruqool. Now I'm acing my AP Chemistry class!",
-      name: "Jasmine Williams",
+      name: "Sneha Reddy",
       title: "High School Student",
       avatar: "/api/placeholder/32/32"
     },
     {
       quote: "As a retired professor, I wanted to continue sharing my knowledge. Guruqool provided the perfect platform to connect with eager physics students while maintaining a flexible schedule.",
-      name: "Robert Thompson",
+      name: "Dr. Vijay Rao",
       title: "Physics Tutor",
       avatar: "/api/placeholder/32/32"
     },
     {
       quote: "The personalized matching algorithm on Guruqool is incredible. My son's coding tutor understands exactly how he learns, and his confidence has skyrocketed in just two months.",
-      name: "Lisa Garcia",
+      name: "Meena Nair",
       title: "Parent of Coding Student",
       avatar: "/api/placeholder/32/32"
     },
     {
       quote: "I've tried several tutoring platforms, but Guruqool stands out for its intuitive interface and quality of tutors. My English writing has improved tremendously thanks to my tutor.",
-      name: "Akiko Tanaka",
+      name: "Pooja Iyer",
       title: "ESL Student",
       avatar: "/api/placeholder/32/32"
     },
     {
       quote: "The video call quality and collaborative whiteboard tools make teaching calculus remotely almost better than in-person. My students are achieving results I never thought possible online.",
-      name: "James Wilson",
+      name: "Sandeep Joshi",
       title: "Calculus Tutor",
       avatar: "/api/placeholder/32/32"
     },
     {
       quote: "Guruqool helped me find a vocal coach who specializes in my specific genre. The progress I've made in my singing career since starting these lessons has been remarkable.",
-      name: "Olivia Martinez",
+      name: "Kavya Menon",
       title: "Vocal Student",
       avatar: "/api/placeholder/32/32"
     },
     {
       quote: "As someone with ADHD, finding a tutor who understands my learning style was crucial. Guruqool's detailed profiles helped me connect with the perfect history tutor for my needs.",
-      name: "Tyler Jackson",
+      name: "Rohan Verma",
       title: "University Student",
       avatar: "/api/placeholder/32/32"
     },
     {
       quote: "The scheduling flexibility on Guruqool allowed me to maintain my full-time job while tutoring Spanish on evenings and weekends. The extra income has been life-changing.",
-      name: "Isabella Navarro",
+      name: "Neha Kulkarni",
       title: "Language Tutor",
       avatar: "/api/placeholder/32/32"
     }
   ];
+
 
   return (
     <div className="h-[37rem] rounded-md flex flex-col antialiased bg-white dark:bg-gray-900 dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
