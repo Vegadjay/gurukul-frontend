@@ -514,7 +514,7 @@ const TutorProfile = () => {
                         {tutor.rating.toFixed(1)}
                       </span>
                       <span className="text-gray-600 dark:text-gray-300">
-                        ({tutor.reviewCount || 0} reviews)
+                        ({tutor.rating || 0} reviews)
                       </span>
                     </div>
                   )}

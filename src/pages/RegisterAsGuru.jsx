@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { User, Mail, Lock, Phone, MapPin, Image, FileText, Languages, GraduationCap, Briefcase, Clock, DollarSign, Facebook, Twitter, Instagram, Linkedin, Youtube } from 'lucide-react';
+import { User, Mail, Lock, Phone, MapPin, Image, FileText, Languages, GraduationCap, Briefcase, Clock, IndianRupee, Facebook, Twitter, Instagram, Linkedin, Youtube } from 'lucide-react';
 
 export default function RegisterGuru() {
     const [formData, setFormData] = useState({
@@ -455,7 +455,7 @@ export default function RegisterGuru() {
                                 </label>
                                 <div className="relative">
                                     <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                                        <DollarSign className="h-5 w-5 text-gray-400" />
+                                        <IndianRupee className="h-5 w-5 text-gray-400" />
                                     </div>
                                     <input
                                         id="perHourRate"
