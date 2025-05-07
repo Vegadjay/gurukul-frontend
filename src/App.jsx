@@ -49,7 +49,7 @@ const HomePage = () => (
   </>
 );
 
-const isFullAccessEnabled = false;
+const isFullAccessEnabled = true;
 
 const App = () => {
 
