@@ -948,8 +948,7 @@ export default function AdminDashboard() {
                                                                                 </>
                                                                             ) : (
                                                                                 <>
-                                                                                    <DollarSign size={14} className="mr-1" />
-                                                                                    Pay Teacher
+                                                                                    ₹ Pay Teacher
                                                                                 </>
                                                                             )}
                                                                         </button>
