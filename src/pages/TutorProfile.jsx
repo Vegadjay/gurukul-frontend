@@ -488,7 +488,7 @@ const TutorProfile = () => {
                       <div className="flex items-center">
                         <Award className="h-4 w-4 text-gray-500 dark:text-gray-400 mr-1" />
                         <span className="text-gray-600 dark:text-gray-300">
-                          {tutor.experience} experience
+                          {tutor.experience} years
                         </span>
                       </div>
                     )}

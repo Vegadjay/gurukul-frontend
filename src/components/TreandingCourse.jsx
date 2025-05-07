@@ -158,7 +158,7 @@ const CourseGrid = () => {
                                 Convenience of selecting mutual time
                             </h4>
                             <p className="text-gray-600 dark:text-gray-300 text-base leading-relaxed font-inter text-left">
-                                Our flexible scheduling system allows students and instructors to find the perfect time that works for both, eliminating the hassle of time zone differences and busy calendars.
+                                Our flexible scheduling system allows students and instructors to find the perfect time that works for both.
                             </p>
                         </div>
                     </div>

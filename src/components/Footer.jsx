@@ -8,25 +8,6 @@ const Footer = () => {
     <footer className="bg-white dark:bg-gray-900 pt-12 pb-6 border-t border-gray-200 dark:border-gray-800">
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="col-span-1">
-            <Link to="/" className="text-xl font-bold text-guru-dark dark:text-white">
-              <img src="/images/logo1.png" alt="" height={100} width={100} className="hover:scale-110 transition duration-200" />
-            </Link>
-            <div className="mt-6 flex space-x-4">
-              <a href="#" className="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300">
-                <Facebook size={20} />
-              </a>
-              <a href="#" className="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300">
-                <Linkedin size={20} />
-              </a>
-              <a href="#" className="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300">
-                <Youtube size={20} />
-              </a>
-              <a href="#" className="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300">
-                <Instagram size={20} />
-              </a>
-            </div>
-          </div>
 
           <div className="col-span-1">
             <h3 className="font-semibold mb-4 text-gray-900 font-poppins dark:text-gray-100">Terms and Conditions</h3>

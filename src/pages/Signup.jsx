@@ -32,7 +32,6 @@ const Signup = () => {
     email: "",
     password: "",
     confirmPassword: "",
-    // Student specific fields
     standard: "",
     school: "",
     cgpa: "",
@@ -157,7 +156,6 @@ const Signup = () => {
                 </p>
               </div>
 
-              {/* User Type Selector */}
               <div className="mb-6">
                 <div className="flex bg-gray-100 dark:bg-gray-700 rounded-lg p-1">
                   <button
@@ -303,7 +301,6 @@ const Signup = () => {
                 
                 {step === 2 && (
                   <>
-                    {/* Step 2: Password */}
                     <div>
                       <label
                         htmlFor="password"

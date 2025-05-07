@@ -62,7 +62,7 @@ const HeroSection = () => {
               </motion.span>
             </Link>
             <Link
-              to="/signup"
+              to="/gururegister"
               className="bg-white border-2 border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-lg font-medium transition-all duration-300"
             >
               <motion.span
