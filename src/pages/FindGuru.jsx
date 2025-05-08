@@ -167,8 +167,7 @@ const FindGuru = () => {
     setSearchTerm("");
   };
 
-  const subjects = Array.from(new Set(tutors.map(tutor => tutor.subject).filter(Boolean)));
-
+  const subjects = Array.from(new Set(tutors.map(tutor => tutor.category).filter(Boolean)));
   const locations = Array.from(new Set(tutors.map(tutor => tutor.location).filter(Boolean)));
 
   const priceRanges = [
